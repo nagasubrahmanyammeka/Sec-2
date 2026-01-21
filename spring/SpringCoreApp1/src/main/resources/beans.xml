@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--Depenedent Bean Which Will Depend on the Course Bean-->
+	<bean id="stud" class="com.klu.beans.Student">
+	   <property name="sid" value="1001"></property>
+	   <property name="sname" value="Raja"></property>
+	   <property name="course" ref="crs"></property>
+	   <property name="address" ref="address"></property>
+	</bean>
+	<!--Dpenedency Bean-->
+	<bean id="crs" class="com.klu.beans.Course">
+	   <property name="cid" value="24SDCS02E"></property>
+	   <property name="cname" value = "Full Stack Application Development"></property>
+	</bean>
+	<bean id="address" class="com.klu.beans.Address">
+	    <property name="street" value="Carmel Nagar"></property>
+	    <property name="city" value="Vijayawada"></property>
+	    <property name="state" value="Andhra Pradesh"></property>
+	</bean>
+</beans>  
