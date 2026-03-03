@@ -15,7 +15,7 @@ import com.klu.service.StudentService;
 
 import jakarta.validation.Valid;
 
-@RestControllerAdvice
+@RestController
 @RequestMapping("/stud")
 @CrossOrigin("*")
 public class StudentController {
