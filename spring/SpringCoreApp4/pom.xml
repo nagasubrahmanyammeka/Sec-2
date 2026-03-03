@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.klu</groupId>
-  <artifactId>SpringCoreApp2</artifactId>
+  <artifactId>SpringCoreApp4</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>SpringCoreApp2</name>
+  <name>SpringCoreApp4</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -39,6 +39,11 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.klu</groupId>
+    	<artifactId>SpringCoreApp1</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
